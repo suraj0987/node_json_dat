@@ -1,0 +1,11 @@
+node_api_json_builder.page_jason:
+  path: '/data/{siteapikey}/{node_type}/{node}'
+  defaults:
+    _controller: '\Drupal\node_api_json_builder\Controller\SiteApiKeyController::pageJson'
+  requirements:
+    _permission: 'node_api_json_builder access page_json'
+    _custom_access: '\Drupal\node_api_json_builder\Controller\SiteApiKeyController::checkAccess'
+  options:
+    parameters:
+      node:
+        type: entity:node
