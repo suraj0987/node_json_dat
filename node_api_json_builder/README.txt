@@ -52,7 +52,7 @@ or visit '/admin/config/system/site-information'.
 'Axelerant Site API Key Custom Module'.
 
 3. Access the json representation of respective page type node by visiting the 
-url '/page_json/{site_api_key}/{node_id}'.
+url '/data/{siteapikey}/{node_type}/{node_id}'.
 
 
 RESOURCES USED
